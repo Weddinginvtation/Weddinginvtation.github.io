@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف | فرحة العمر</title>
+    <!-- Google Fonts for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Intro Overlay -->
+    <div id="welcome-overlay" class="overlay flex-center">
+        <div class="envelope-container flex-center flex-column text-center">
+            <h1 class="welcome-title text-gold fade-up">نتشرف بدعوتكم لحضور حفل زفافنا</h1>
+            <p class="welcome-subtitle fade-up delay-1">لتكتمل الفرحة بحضوركم. دعونا نعيش الأجواء معاً (ارفع الصوت).</p>
+            <button id="open-btn" class="glass-btn pulse fade-up delay-2 mt-4">افتح الدعوة</button>
+        </div>
+    </div>
+
+    <!-- Audios -->
+    <!-- Zaffa / Joyous Track user provided -->
+    <audio id="bg-music" loop>
+        <source src="audio/1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="firework-audio" preload="auto">
+        <source src="./audio/f.mp3" type="audio/ogg">
+    </audio>
+
+    <main id="main-content" class="hidden">
+
+        <!-- Hero Section -->
+        <section class="hero flex-center flex-column">
+            <div class="hero-bg"></div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-glass flex-column flex-center text-center">
+                <p class="pre-title fade-up">بسم الله الرحمن الرحيم</p>
+
+                <!-- Image placed in background -->
+
+                <h1 class="main-title text-gold fade-up delay-2">محمد <br>&<br> رقيه</h1>
+
+
+                <!-- Aesthetic word under names -->
+                <p class="aesthetic-word text-gold fade-up delay-3">حب لا ينتهي، وبداية لقصة عمر</p>
+
+                <p class="date fade-up delay-3">يوم الخميس، ٩ أبريل ٢٠٢٦</p>
+            </div>
+
+            <div class="scroll-indicator fade-up delay-3"
+                style="position: relative; margin-top: clamp(2rem, 10vh, 5rem); bottom: auto;">
+                <p>ننزل لتحت علشان القصة تبتدي</p>
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- The Story Section -->
+        <section class="story-section">
+            <div class="container text-center">
+                <p class="story-text reveal delay-1">القصة كلها بدأت بنظرة صدفة ورضا رب العالمين...</p>
+                <p class="story-text reveal delay-1">لحظة حسّت قلوبنا فيها بأمان الدنيا كله.</p>
+                <p class="story-text reveal delay-1">واتفقنا نكمّل المشوار ونبني حياة أحلى مع بعض.</p>
+                <p class="story-text text-gold reveal delay-1">والنهاردة.. فرحتنا مش هتكمل غير بيكم وسطينا.</p>
+            </div>
+        </section>
+
+        <!-- Cinematic Video Section -->
+        <section class="video-section">
+            <div class="video-container reveal">
+                <!-- Autoplay, Loop, Muted Cinematic Video -->
+                <video class="cinematic-video" autoplay loop muted playsinline>
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-a-couple-holding-hands-during-a-wedding-ceremony-43152-large.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Swiper and Masonry Galleries Removed -->
+
+        <!-- Location Section (New for Egyptian Market) -->
+        <section class="location-section container">
+            <div class="text-center reveal">
+                <h2 class="section-title text-gold">مكاننا وقاعتنا</h2>
+                <div class="divider"></div>
+                <p class="desc rtl-text mb-4">
+                    بانتظاركم بكل حب في قاعه ويدينج ف نجع حمادي. الزفة هتبدأ الساعة ٦ مساءً
+                    إن شاء الله.
+                </p>
+            </div>
+
+            <!-- Map Container -->
+            <div class="map-container reveal delay-1 mt-4">
+                <iframe
+                    src="https://maps.google.com/maps?q=364H%2BVPQ%20%D9%82%D8%A7%D8%B9%D8%A9%20%D9%88%D9%8A%D8%AF%D9%8A%D9%86%D8%AC,%20Madinet%20Najaa%20Hammadi,%20Qena&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Google Maps Button -->
+            <div class="text-center reveal delay-2 mt-4 map-btn-wrapper">
+                <a href="https://www.google.com/maps/place/%D9%82%D8%A7%D8%B9%D8%A9+%D9%88%D9%8A%D8%AF%D9%8A%D9%86%D8%AC%E2%80%AD/@26.0569112,32.2290242,17z/data=!3m1!4b1!4m6!3m5!1s0x1448d1fda72a1dc3:0x281474cde7954c22!8m2!3d26.0569112!4d32.2290242!16s%2Fg%2F11vf7g3xdl?hl=en-US&entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" class="glass-btn pulse inline-block map-btn">افتح اللوكيشن على خرائط جوجل</a>
+            </div>
+        </section>
+
+        <!-- Auto Surprise Section (Cake) -->
+        <section class="surprise-section flex-center flex-column" id="auto-surprise">
+            <div class="surprise-content text-center">
+                <h2 class="section-title text-gold reveal">الاحتفال الكبير</h2>
+                <p class="desc reveal delay-1">يومنا مكنش هيكمل ولا هيحلو من غيركم.</p>
+
+                <div class="cake-container reveal delay-2">
+                    <img src="./img/2.jpeg" alt="تورتة العرسان بالشماريخ" class="cake-img pan-img">
+
+                    <!-- Flares and Balloons injected by JS -->
+                    <div id="animation-layer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <p>&copy; تصميم MustafaSalah TradeMark ™® 2026. عقبال عندكم جميعاً ❤️.</p>
+        </footer>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
